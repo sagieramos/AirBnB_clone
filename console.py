@@ -15,7 +15,7 @@ from models.review import Review
 
 
 class HBNBCommand(cmd.Cmd):
-    """ General Class for HBNBCommand """
+    """ General Class HBNBCommand """
     prompt = '(hbnb) '
     classes = {'BaseModel': BaseModel, 'User': User, 'City': City,
                'Place': Place, 'Amenity': Amenity, 'Review': Review,
@@ -128,6 +128,7 @@ class HBNBCommand(cmd.Cmd):
                     print('** attribute name missing **')
             else:
                 print('** no instance found **')
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
