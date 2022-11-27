@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Defines unittests for models/state.py.
+
 Unittest classes:
     TestState_instantiation
     TestState_save
@@ -149,9 +150,9 @@ class TestState_to_dict(unittest.TestCase):
 
     def test_to_dict_contains_added_attributes(self):
         st = State()
-        st.middle_name = "Holberton"
+        st.middle_name = "ALX"
         st.my_number = 98
-        self.assertEqual("Holberton", st.middle_name)
+        self.assertEqual("ALX", st.middle_name)
         self.assertIn("my_number", st.to_dict())
 
     def test_to_dict_datetime_attributes_are_strs(self):
